@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+.inner {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+}
+
+
+/* .main .inner .title {
+  position: absolute;
+  right: 150px;
+  top: 35px;
+  font-size: 3rem;
+}
+
+
+
+.main .inner .back {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main .inner .back:hover .bi-arrow-left {
+  background: #1eff00;
+  color: #fff;
+}
+
+.main .inner .back .bi-arrow-left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 8rem;
+  width: 100px;
+  padding: 5px 10px;
+  height: 100px;
+} */
+
+
+
+.main {
+  height: 100%;
+}
+
+.main::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 200%;
+  background: #000;
+  position: absolute;
+  left: 97px;
+  top: 0;
+}
+
+.main::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 200%;
+  background: #000;
+  position: absolute;
+  right: 97px;
+  top: 0;
+}
+
+
+
+
+.main .inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+.main .inner::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  left: 0px;
+  bottom: 100px;
+}
+
+
+
+
+.main .left h1 {
+  font-size: 19.5rem;
+  font-weight: 500;
+  letter-spacing: -5.5px;
+}
+
+.main .left h2 {
+  font-weight: 400;
+  font-size: 4.8rem;
+  letter-spacing: 4.5px;
+}
+
+
+.main .right {
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+  font-size: 2.4rem;
+}
+
+.main .right .top {
+  padding-bottom: 0px;
+  display: flex;
+  gap: 170px;
+}
+
+.main .right dt {
+  font-weight: 700;
+}
+
+.main .right dd {
+  font-weight: 400;
+} 
+
+.main .right .bot {
+  display: flex;
+  gap: 150px;
+}
+
+
+
+
+
+.contents .inner {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 150px 0;
+}
+
+.contents .inner .mobile {
+  width: 300px;
+  display: inline-block;
+}
+
+.guide .inner {
+  padding: 0 97px;
+}
+
+.guide .inner::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  left: 97px;
+  top: 0;
+}
+
+.guide .inner::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  right: 97px;
+  top: 0;
+}
+
+
+

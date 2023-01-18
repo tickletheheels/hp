@@ -1,0 +1,423 @@
+@charset "utf-8";
+
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Mada', sans-serif;
+}
+
+body {
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+a {
+    display: block;
+}
+
+.h_scroll {
+    overscroll-behavior: none;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.panel {
+    width: 100%;
+    color: white;
+}
+
+
+.main {
+    background-color: #2B99FF;
+    height: 100%;
+}
+
+.main h2 {
+    font-size: 26rem;
+    font-weight: 600;
+    color: #692C00;
+    letter-spacing: -15px;
+    line-height: 0.6;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.main h3 {
+    font-size: 12.5rem;
+    font-weight: 100;
+    color: #692C00;
+    text-align: right;
+    padding-right: 3.7%;
+    border-bottom: 1px solid #692C00;
+}
+
+.main .list {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+    top: 60%;
+    font-size: 2.4rem;
+    color: #692C00;
+}
+
+
+
+
+.main .gnb {
+    display: flex;
+    font-size: 2.4rem;
+    justify-content: space-between;
+    border-top: 1px solid #692C00;
+    margin-top: 22%;
+}
+
+.main .gnb li {
+    display: flex;
+    color: #692C00;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.main .gnb li:nth-child(1) {
+    font-size: 1.4rem;
+    padding-left: 5%;
+}
+
+.main .gnb li a {
+    padding: 0 30px;
+    color: #692C00;
+    cursor: pointer;
+}
+
+
+
+.about {
+    background: #692C00;
+    padding: 5% 0;
+    display: flex;
+    position: relative;
+    font-family: 'ChosunSg', sans-serif;
+    /* justify-content: space-around;
+    align-items: center; */
+}
+
+.about h2 {
+    font-size: 19.5rem;
+    padding-left: 5%;
+}
+
+.about .selfie {
+    width: 35%;
+}
+
+.about .selfie::before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 23%;
+    top: 0;
+}
+
+.about .selfie .sel01 {
+    position: absolute;
+    left: 38%;
+    top: 0%;
+    opacity: 0.5;
+}
+
+
+.about .selfie .sel03 {
+    position: absolute;
+    position: absolute;
+    left: 33%;
+    top: 40%;
+    opacity: 0.8;
+}
+
+.about .selfie .sel04 {
+    position: absolute;
+    position: absolute;
+    left: 23%;
+    top: 20%;
+}
+
+
+.about .left {
+    font-size: 2rem;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about .left::before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+}
+
+.about .left::after {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 63%;
+}
+
+
+
+.about .left h4 {
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 400;
+    padding-bottom: 10%;
+}
+
+.about .left h4 span {
+    font-size: 4rem;
+    color: #2B99FF;
+}
+
+
+
+.about .left .contact li {
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 5px 0;
+}
+
+.about .left .contact li span {
+    font-weight: 700;
+}
+
+.about .para {
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+
+.about .intro {
+    width: 40%;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.9;
+}
+
+.about .intro h5 {
+    font-size: 2.4rem;
+    padding-bottom: 1%;
+    font-family: 'Mada', sans-serif;
+}
+
+.about .intro .right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    font-family: 'ChosunSg', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.about .intro .right .edu p {
+    padding: 5px 0;
+}
+
+.about .intro .right .cert p {
+    padding: 5px 0;
+}
+
+.about .intro .right .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+
+
+
+.project {
+    background-color: #692C00;
+    display: flex;
+    position: relative;
+    padding: 10% 0;
+}
+
+.project h2 {
+    font-size: 17rem;
+    font-weight: 500;
+}
+
+.project .left {
+    width: 40%;
+    height: 100vh;
+    background: #000;
+    position: sticky;
+    top: 0;
+    padding: 100px 50PX;
+    font-size: 11rem;
+    color: #2B99FF;
+    background: #692C00;
+}
+
+/* .project .left::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 90%;
+    background: #692C00;
+    position: absolute;
+    right: 0%;
+    top: 10;
+} */
+
+
+.project .right {
+    width: 60%;
+    padding-right: 100px;
+    font-size: 3rem;
+}
+/* 
+.project .right ::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: #692C00;
+    position: absolute;
+    left: 67.3%;
+    top: 0;
+}
+
+.project .right ::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: #692C00;
+    position: absolute;
+    right: 5.4%;
+    top: 0;
+} */
+
+.project .right .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project .right .list li {
+    width: 520px;
+    height: 600px;
+    padding: 100px 0;
+    position: relative;
+}
+
+.project .right .list li:hover .over{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.project .right .list .over {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   opacity: 0;
+}
+
+.project .right .list .over a {
+    padding: 10px 15px 10px 0px;
+    text-align: center;
+    background: #1eff00;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+.project .right .list .over .bi-arrow-right-circle {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+}
+
+.project .right .list .aesop {
+    background: url('../images/aesop.png') no-repeat;
+}
+
+.project .right .list .hh {
+    background: url('../images/hh.png') no-repeat;
+}
+
+.project .right .list .bagle {
+    background: url('../images/bagle.png') no-repeat;
+}
+
+.project .right .list .branding29cm {
+    background: url('../images/29cm.png') no-repeat;
+}
+
+.project .right .list .egg {
+    background: url('../images/egg.png') no-repeat;
+}
+
+.project .right .list .card {
+    background: url('../images/cn.png') no-repeat;
+}
+
+.project .right .list .landing {
+    background: url('../images/landing.png') no-repeat;
+}
+
+.project .right .list li dl {
+    font-family: 'ChosunSg', sans-serif;
+    background: rgba(105, 44, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    margin-top: 401px;
+}
+
+.project .right .list li dl dt {
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.project .right .list li dl dd {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+
+
+
+
+

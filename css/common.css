@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+/* font-size : 10px; */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Mada', sans-serif;
+}
+
+body {
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+/* 여백초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 테이블 중첩여부지정, 가로 크기 100% */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* 목록 요소에 숫자, 불릿 기호 없애기 */
+ol,
+ul {
+  list-style: none;
+}
+
+/* 링크에 밑줄 없애기, 글자색 기본색 지정 */
+a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+/* 글자 기울임 설정 */
+address {
+  font-style: normal;
+}
+
+/* 바같테두리 없애기 */
+fieldset,
+input,
+textarea,
+select {
+  vertical-align: middle;
+  outline: none;
+  border: 0;
+}
+
+/* select 태그 화살표 없애기 appearance:none; */
+/* vertical-align: middle 폼 태그에만 적용 가능함 */
+
+legend {
+  display: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 10%;
+  /* 스크롤바의 길이 */
+  background: #1eff00;
+  /* 스크롤바의 색상 */
+
+  border-radius: 30px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000;
+  /*스크롤바 뒷 배경 색상*/
+}
+
+.menu {
+  position: fixed;
+  right: 0%;
+  bottom: 100px;
+  width: 10%;
+  cursor: pointer;
+}
+
+.menu span {
+  font-size: 1.7rem;
+}
+
+
+
+.menupg {
+  width: 100vw;
+  height: 100vh;
+  background: #692C00;
+  color: #2B99FF;
+  padding: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999999!important;
+}
+
+.menupg > h2 {
+  font-size: 19.5rem;
+  letter-spacing: -5.5px;
+  font-weight: 500;
+  border-bottom: 1px solid #2B99FF;
+}
+
+.menupg .depth1 > li > a {
+  font-size: 9.6rem;
+  padding: 50px 0;
+  border-bottom: 1px solid #2B99FF;
+  display: block;
+  color: #2B99FF;
+  position: relative;
+}
+
+.menupg .depth1 > li > a span {
+  color: #2B99FF;
+  font-size: 4.8rem;
+  font-weight: 200;
+  padding-right: 100px;
+}
+
+.menupg .depth2 {
+  position: absolute;
+  left: 33%;
+  bottom: 23%;
+  padding-left: 50px;
+}
+
+.menupg .depth2 > li {
+  display: inline-block;
+  font-size: 2.4rem;
+}
+
+.menupg .depth2 > li > a {
+  color: #2B99FF;
+  display: inline-block;
+  margin-right: 30px;
+  padding: 10px;
+}
+
+
+.bi-plus-lg {
+  font-size: 10rem;
+  position: absolute;
+  right: 10%;
+  bottom: 18%;
+  cursor: pointer;
+}
+
+.bi-x-lg {
+  font-size: 10rem;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
+}
+
+
+
+
+
+.footer {
+  background-color: #2B99FF;
+  font-size: 1.5rem;
+  padding: 50px;
+  font-family: 'ChosunSg', sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .left {
+  color: #692C00;
+}
+
+.footer .copy {
+  padding-top: 20px;
+}
+
+.footer .fgnb {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  align-items: center;
+}
+
+.footer .fgnb a {
+  display: block;
+  color: #692C00;
+  font-size: 2rem;
+}
+
+
+
