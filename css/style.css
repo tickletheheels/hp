@@ -340,6 +340,16 @@ a {
 
 @media (max-width:768px) {
 
+    .about {
+        background: #692C00;
+        padding: 3% 0;
+        display: flex;
+        position: relative;
+        font-family: 'ChosunSg', sans-serif;
+        /* justify-content: space-around;
+        align-items: center; */
+    }
+
 
     .about h2 {
         font-size: 8rem;
@@ -419,14 +429,14 @@ a {
     
     .about .intro {
         width: 40%;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         display: flex;
         justify-content: space-around;
         opacity: 0.9;
     }
     
     .about .intro h5 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding-bottom: 1%;
         font-family: 'Mada', sans-serif;
     }

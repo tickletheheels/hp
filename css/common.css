@@ -208,6 +208,10 @@ body::-webkit-scrollbar-track {
   
   
   .menupg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999!important;
     padding: 60px 40px 0 40px;
     height: 100%;
     overflow-y: hidden;
