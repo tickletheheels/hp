@@ -139,6 +139,79 @@
   gap: 150px;
 }
 
+@media (max-width:834px) {
+
+  .main {
+    height: 100vh;
+    padding: 0 40px;
+  }
+
+
+  .main .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+  }
+
+
+
+  .main .inner::after {
+    content: '';
+    display: block;
+    width: 126%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: -40px;
+    bottom: 0px;
+  }
+
+
+  .main .left h1 {
+    padding-top: 50px;
+    font-size:  10rem;
+    font-weight: 500;
+    letter-spacing: -5.5px;
+  }
+
+  .main .left h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+
+
+  .main .right {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    font-size: 1.8rem;
+  }
+
+  .main .right .top {
+    padding-bottom: 0px;
+    display: flex;
+    gap: 60px;
+  }
+
+  .main .right dt {
+    font-weight: 700;
+  }
+
+  .main .right dd {
+    font-weight: 400;
+  }
+
+  .main .right .bot {
+    display: flex;
+    gap: 50px;
+  }
+
+}
+
 @media (max-width:768px) {
 
   .main {
@@ -233,6 +306,24 @@
   display: inline-block;
 }
 
+@media (max-width:834px) {
+  .contents .inner {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px 0;
+  }
+
+  .contents .inner video {
+    width: 450px;
+  }
+  
+  .contents .inner .mobile {
+    width: 150px;
+    display: inline-block;
+  }
+  
+}
 
 @media (max-width:768px) {
   .contents .inner {

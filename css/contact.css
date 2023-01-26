@@ -53,6 +53,60 @@
   font-weight: 600;
 }
 
+@media (max-width:834px) {
+  .main .inner {
+    height: 100vh;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+  }
+  
+  
+  .main h1 {
+    font-size: 10rem;
+    color: #fff;
+  }
+  
+  .main .intro {
+    font-size: 4rem;
+  }
+  
+  
+  .main .pro {
+    width: 300px;
+    position: absolute;
+    right: 35%;
+    top: 55%;
+  }
+
+  .main .pro img {
+    display: inline-block;
+    max-width: 100%;
+  } 
+
+
+  .main .right {
+    padding-top: 50px;
+    font-size: 2.8rem;
+    font-weight: 300;
+  }
+  
+  .main .right .more {
+    font-weight: 500;
+  }
+  
+  .main .right .notice {
+    font-size: 1.5rem;
+    padding: 50px 0;
+  }
+  
+  .main .right .notice .more {
+    font-weight: 600;
+  }
+}
+
 @media (max-width:768px) {
   .main .inner {
     height: 100vh;
