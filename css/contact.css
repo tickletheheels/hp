@@ -53,7 +53,7 @@
   font-weight: 600;
 }
 
-@media (max-width:834px) {
+@media (max-width:820px) {
   .main .inner {
     height: 100vh;
     padding: 0px;
