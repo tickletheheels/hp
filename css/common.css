@@ -190,7 +190,7 @@ body::-webkit-scrollbar-track {
   cursor: pointer;
 }
 
-@media (max-width:1200px) {
+@media (max-width:1440px) {
 
   .menu {
     position: fixed;
@@ -266,7 +266,7 @@ body::-webkit-scrollbar-track {
 
 }
 
-@media (max-width:768px) {
+@media (max-width:810px) {
 
   .menu {
     position: fixed;
@@ -374,7 +374,7 @@ body::-webkit-scrollbar-track {
   font-size: 2rem;
 }
 
-@media (max-width:768px) {
+@media (max-width:810px) {
   .footer {
     background-color: #2B99FF;
     font-size: 1rem;
